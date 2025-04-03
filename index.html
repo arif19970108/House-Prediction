@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Estimator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">House Estimator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="background: url('images/banner.jpg') center/cover;">
+        <div class="overlay">
+            <h1>Estimate Your House Price</h1>
+            <p>Enter your details and get an estimated price</p>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="text-center">House Price Estimator</h3>
+                    <form id="priceForm">
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <img src="images/location-icon.png" alt="Location Icon" class="icon"> Location:
+                            </label>
+                            <input type="text" class="form-control" id="location" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <img src="images/size-icon.png" alt="Size Icon" class="icon"> Square Feet:
+                            </label>
+                            <input type="number" class="form-control" id="sqft" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <img src="images/bedroom-icon.png" alt="Bedroom Icon" class="icon"> Bedrooms:
+                            </label>
+                            <input type="number" class="form-control" id="bedrooms" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <img src="images/bathroom-icon.png" alt="Bathroom Icon" class="icon">Bathrooms:
+                            </label>
+                            <input type="number" class="form-control" id="bathrooms" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Estimate Price</button>
+                    </form>
+                    <h4 class="text-center mt-3" id="result">
+                        <img src="images/price-tag.png" alt="Price Tag Icon" class="icon"> <!-- Price Tag Icon -->
+                        <span id="estimatedPrice"></span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 House Estimator. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
