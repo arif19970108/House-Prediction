@@ -12,5 +12,4 @@ House Estimator is a web-based application designed to help users estimate const
 - HTML5  
 - CSS3  
 - Bootstrap 5  
-- JavaScript  
-# House-Prediction
+- JavaScript 
